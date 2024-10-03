@@ -1,0 +1,36 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout-Repository
+        uses: actions/checkout@v3
+
+      - name: Install-Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12.6"
+
+      - name: Install-Dependencies
+        run: |
+          pip install mkdocs==1.6.1
+          pip install mkdocs-material==9.5.37
+
+      - name: Build-Site
+        run: mkdocs build --verbose --clean
+
+      - name: Deploy-Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
