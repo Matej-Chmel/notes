@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="pvr-fizz.html">
+        <link rel="prev" href="ps-rand-var.html">
       
       
-        <link rel="next" href="sc-browser.html">
+        <link rel="next" href="ps-cebyshev.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>HTML - Poznámky</title>
+        <title>Diskrétní náhodná veličina - Poznámky</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#generovani-kratkych-html-aplikaci" class="md-skip">
+        <a href="#ciselne-charakteristiky-dnv" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HTML
+              Diskrétní náhodná veličina
             
           </span>
         </div>
@@ -182,10 +182,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="ps.html" class="md-tabs__link">
           
   
@@ -218,12 +220,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="ai-html.html" class="md-tabs__link">
           
   
@@ -310,23 +310,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -337,7 +342,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             PS
@@ -432,10 +437,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="ps-dnv.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Diskrétní náhodná veličina
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ps-dnv.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -444,6 +469,119 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obecny-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obecný moment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stredni-hodnota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Střední hodnota
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Střední hodnota">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vlastnosti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vlastnosti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#centralni-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Centrální moment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rozptyl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rozptyl
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rozptyl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vlastnosti_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vlastnosti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smerodatna-odchylka" class="md-nav__link">
+    <span class="md-ellipsis">
+      Směrodatná odchylka
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variacni-koeficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variační koeficient
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -568,28 +706,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -600,7 +733,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             AI
@@ -611,19 +744,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="ai-html.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="ai-html.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -632,7 +756,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -752,6 +875,107 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obecny-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obecný moment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stredni-hodnota" class="md-nav__link">
+    <span class="md-ellipsis">
+      Střední hodnota
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Střední hodnota">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vlastnosti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vlastnosti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#centralni-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Centrální moment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rozptyl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rozptyl
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rozptyl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vlastnosti_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vlastnosti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smerodatna-odchylka" class="md-nav__link">
+    <span class="md-ellipsis">
+      Směrodatná odchylka
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variacni-koeficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variační koeficient
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -765,27 +989,77 @@
                   
 
 
-<h1 id="generovani-kratkych-html-aplikaci">Generování krátkých HTML aplikací</h1>
-<p>Následující výzva pomůže při generování krátkých HTML programů s využitím CSS a jazyka Javascript.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Create an HTML5 app using HTML, CSS, and JavaScript with the following guidelines:
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>- Use separate files: index.html, style.css, and app.js
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>- Do not use comments
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>- Do not include any explanation, output only the code
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>- Use one code block for each file, each code block is introduced with a file name in the heading, do not include the name of the file in a comment
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>- JavaScript should load in the head tag and start by calling the main() function via the body tag&#39;s onload attribute
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>- Follow OOP principles in JS: all logic (except utility and math functions) must reside within classes or their methods
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>- Sort methods alphabetically within each class, with the constructor first. The async keyword does not affect this order
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>- Define constants outside classes
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>- Pass methods to event handlers using .bind() to link this to the current instance
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>- Alphabetize CSS rules by selector name (ignoring *, #, and .)
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>- Use no external libraries or CDNs for CSS or JS
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>- Use ES6 features, including async/await over .then().catch()
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>- Avoid binding HTML elements directly in class constructors; use a dedicated method
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>- The main() function should instantiate and manage objects (e.g., bind HTML elements)
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>Here are the requirements:
-</span></code></pre></div>
+<h1 id="ciselne-charakteristiky-dnv">Číselné charakteristiky DNV</h1>
+<h2 id="obecny-moment">Obecný moment</h2>
+<p>Pro <span class="arithmatex">\(r\)</span>-tý řád.</p>
+<div class="arithmatex">\[ \begin{align}
+\mu_r &amp;= \sum_i x_i^r \cdot P(x_i)
+\end{align} \]</div>
+<h2 id="stredni-hodnota">Střední hodnota</h2>
+<p>Je obecným momentem 1. řádu.</p>
+<div class="arithmatex">\[ \begin{align}
+E(X) &amp;= \sum_i x_i \cdot P(x_i)
+\end{align} \]</div>
+<ul>
+<li>průměrná, očekávaná hodnota NV</li>
+<li>populační průměr</li>
+<li>vážený průměr všech hodnot</li>
+</ul>
+<h3 id="vlastnosti">Vlastnosti</h3>
+<div class="arithmatex">\[ \begin{align}
+E(aX + b) &amp;= aE(x) + b \\ \\
+E(\sum_i^n) &amp;= \sum_i^n E(X_i) \\
+E(\prod_{i=1}^n X_i) &amp;= \prod_{i=1}^n E(X_i) &amp;\quad \text{nezávislé veličiny}
+\end{align} \]</div>
+<h2 id="modus">Modus</h2>
+<p>Typická hodnota NV.</p>
+<div class="arithmatex">\[ \begin{align}
+P(X = \hat{x}) \geq P(X = x_i)
+\end{align} \]</div>
+<ul>
+<li>Modů může být více</li>
+<li>Pokud je jen jeden, pak NV má <em>unimodální rozdělení</em></li>
+</ul>
+<p>Pro unimodální <em>symetrické</em> rozdělení:</p>
+<div class="arithmatex">\[ \begin{align}
+E(X) &amp;= \hat{X}
+\end{align} \]</div>
+<h2 id="centralni-moment">Centrální moment</h2>
+<p>Pro <span class="arithmatex">\(r\)</span>-tý řád.</p>
+<div class="arithmatex">\[ \begin{align}
+\mu_r^\prime &amp;= \sum_i (x_i - E(X))^r \cdot P(x_i)
+\end{align} \]</div>
+<h2 id="rozptyl">Rozptyl</h2>
+<p>Střední kvadratická odchylka od střední hodnoty.</p>
+<div class="arithmatex">\[ \begin{align}
+\mu_2^\prime &amp;= \sum_i (x_i - E(X))^2 \cdot P(x_i) \\
+D(X) &amp;= \sigma^2 &amp;= \mu_2^\prime \\
+D(X) &amp;= E(X^2) - (E(X))^2
+\end{align} \]</div>
+<ul>
+<li>Míra variability kolem střední hodnoty</li>
+<li>Malý rozptyl <span class="arithmatex">\(\implies\)</span> hodnoty s vysokou pravděpodobností blízko střední hodnoty</li>
+<li>Velký rozptyl <span class="arithmatex">\(\implies\)</span> hodnoty s vysokou pravděpodobností daleko od střední hodnoty</li>
+</ul>
+<h3 id="vlastnosti_1">Vlastnosti</h3>
+<div class="arithmatex">\[ \begin{align}
+D(aX + b) &amp;= a^2 D(X) \\
+D(\sum_i^n X_i) &amp;= \sum_i^n D(X_i) &amp;\quad \text{nezávislé veličiny}
+\end{align} \]</div>
+<h2 id="smerodatna-odchylka">Směrodatná odchylka</h2>
+<p>Odmocnina z rozptylu.</p>
+<div class="arithmatex">\[ \begin{align}
+\sigma(X) &amp;= \sqrt{D(X)}
+\end{align} \]</div>
+<h2 id="variacni-koeficient">Variační koeficient</h2>
+<p>Směrodatná odchylka v procentech střední hodnoty.</p>
+<div class="arithmatex">\[ \begin{align}
+\gamma(X) &amp;= \frac{\sigma(X)}{E(X)} \cdot 100 %
+\end{align} \]</div>
+<ul>
+<li>Čím nižší, tím <em>homogennější</em> soubor</li>
+<li>Pokud <span class="arithmatex">\(\gamma(X) &gt; 50 %\)</span>, pak silně rozptýlený soubor</li>
+</ul>
 
 
 
