@@ -32,10 +32,10 @@ nav:
     - Windows: sc-windows.md
 plugins:
   - offline
-  - search:
-      lang: en
+  - search
 site_name: Poznámky
 theme:
+  custom_dir: overrides
   features:
     - content.code.copy
     - navigation.tabs
@@ -43,5 +43,7 @@ theme:
   footer:
     icon: null
     copyright: ""
-  language: en
+  language: cs
   name: material
+watch:
+  - overrides

@@ -59,7 +59,7 @@ Střední kvadratická odchylka od střední hodnoty.
 
 \[ \begin{align}
 \mu_2^\prime &= \sum_i (x_i - E(X))^2 \cdot P(x_i) \\
-D(X) &= \sigma^2 &= \mu_2^\prime \\
+D(X) &= \sigma^2 = \mu_2^\prime \\
 D(X) &= E(X^2) - (E(X))^2
 \end{align} \]
 
