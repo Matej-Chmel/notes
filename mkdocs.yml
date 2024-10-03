@@ -19,6 +19,9 @@ nav:
     - ps.md
     - Kombinatorika: ps-comb.md
     - Pravděpodobnost: ps-prob.md
+    - Náhodná veličina: ps-rand-var.md
+    - Diskrétní náhodná veličina: ps-dnv.md
+    - Čebyševova nerovnost: ps-cebyshev.md
   - PvR:
     - pvr.md
     - Fizz buzz: pvr-fizz.md
